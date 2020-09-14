@@ -1,0 +1,30 @@
+{
+  "name": "nodedemo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "hellonodejs": "node hellonodejs/app.js",
+    "transpilenodets": "tsc hellonodets/app.ts",
+    "hellonodets": "npm run transpilenodets && node hellonodets/app.js",
+    "nodeApp": "node nodeApp/app.js",
+    "jqueryApp": "parcel dev jqueryApp/index.html",
+    "vueApp": "parcel dev vueApp/index.html"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.20.0",
+    "jquery": "^3.5.1",
+    "underscore": "^1.11.0",
+    "vue": "^2.6.12",
+    "vue-hot-reload-api": "^2.3.4"
+  },
+  "devDependencies": {
+    "@vue/component-compiler-utils": "^3.2.0",
+    "parcel-bundler": "^1.12.4",
+    "regenerator-runtime": "^0.13.7",
+    "typescript": "^4.0.2",
+    "vue-template-compiler": "^2.6.12"
+  }
+}
