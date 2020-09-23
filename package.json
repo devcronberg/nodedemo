@@ -9,7 +9,8 @@
     "hellonodets": "npm run transpilenodets && node hellonodets/app.js",
     "nodeApp": "node nodeApp/app.js",
     "jqueryApp": "parcel dev jqueryApp/index.html",
-    "vueApp": "parcel dev vueApp/index.html"
+    "vueApp": "parcel dev vueApp/index.html",
+    "vueAppSimple": "echo Se VueAppSimple/index.html direkte i en browser eller brug LiveServer/VSCode"
   },
   "author": "",
   "license": "ISC",

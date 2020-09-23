@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kommuner i DK</title>
+  </head>
+  <body>
+    <h1>Kommuner i Danmark via Vue (simpel - ikke afhængig af NodeJS)</h1>
+    <div id="app">
+      <div>
+        <ul>
+          <li v-for="kommune in kommuner" :key="kommune.navn">{{ kommune.navn }}</li>
+        </ul>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.11.0/underscore-min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
