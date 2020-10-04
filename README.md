@@ -19,5 +19,6 @@ npm run hellonodejs
 npm run hellonodets
 npm run nodeApp
 npm run jqueryApp 
+npm run vueAppSimple
 npm run vueApp
 ```
