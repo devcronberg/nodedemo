@@ -12,6 +12,8 @@ Hent alt til en mappe og kør
 npm install
 ```
 
+Det kan godt tage lidt tid!
+
 Prøv herefter
 
 ```
@@ -21,4 +23,6 @@ npm run nodeApp
 npm run jqueryApp 
 npm run vueAppSimple
 npm run vueApp
+npn run electronApp
+npn run electronAppMake
 ```

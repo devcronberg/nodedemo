@@ -1,8 +1,9 @@
 {
   "name": "nodedemo",
+  "productName": "nodedemo",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "nodedemo",
+  "main": "electronApp/index.js",
   "scripts": {
     "hellonodejs": "node hellonodejs/app.js",
     "transpilenodets": "tsc hellonodets/app.ts",
@@ -10,22 +11,64 @@
     "nodeApp": "node nodeApp/app.js",
     "jqueryApp": "parcel dev jqueryApp/index.html",
     "vueApp": "parcel dev vueApp/index.html",
-    "vueAppSimple": "echo Se VueAppSimple/index.html direkte i en browser eller brug LiveServer/VSCode"
+    "vueAppSimple": "echo Se VueAppSimple/index.html direkte i en browser eller brug LiveServer/VSCode",
+    "electronApp": "electron-forge start --app-path ./electronApp",
+    "electronAppMake": "electron-forge make --app-path ./electronApp"
   },
-  "author": "",
+  "author": {
+    "name": "Michell Cronberg",
+    "email": "michell@cronberg.dk"
+  },
+  "keywords": [],
   "license": "ISC",
   "dependencies": {
     "axios": "^0.20.0",
+    "electron-squirrel-startup": "^1.0.0",
     "jquery": "^3.5.1",
+    "jsdom": "^16.4.0",
     "underscore": "^1.11.0",
     "vue": "^2.6.12",
     "vue-hot-reload-api": "^2.3.4"
   },
   "devDependencies": {
+    "@electron-forge/cli": "^6.0.0-beta.53",
+    "@electron-forge/maker-deb": "^6.0.0-beta.53",
+    "@electron-forge/maker-rpm": "^6.0.0-beta.53",
+    "@electron-forge/maker-squirrel": "^6.0.0-beta.53",
+    "@electron-forge/maker-zip": "^6.0.0-beta.53",
     "@vue/component-compiler-utils": "^3.2.0",
+    "electron": "^10.1.3",
+    "electron-forge": "^5.2.4",
     "parcel-bundler": "^1.12.4",
     "regenerator-runtime": "^0.13.7",
     "typescript": "^4.0.2",
     "vue-template-compiler": "^2.6.12"
+  },
+  "config": {
+    "forge": {
+      "packagerConfig": {},
+      "makers": [
+        {
+          "name": "@electron-forge/maker-squirrel",
+          "config": {
+            "name": "electronApp"
+          }
+        },
+        {
+          "name": "@electron-forge/maker-zip",
+          "platforms": [
+            "darwin"
+          ]
+        },
+        {
+          "name": "@electron-forge/maker-deb",
+          "config": {}
+        },
+        {
+          "name": "@electron-forge/maker-rpm",
+          "config": {}
+        }
+      ]
+    }
   }
 }
