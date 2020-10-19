@@ -12,8 +12,7 @@
     "jqueryApp": "parcel dev jqueryApp/index.html",
     "vueApp": "parcel dev vueApp/index.html",
     "vueAppSimple": "echo Se VueAppSimple/index.html direkte i en browser eller brug LiveServer/VSCode",
-    "electronApp": "electron-forge start --app-path ./electronApp",
-    "electronAppMake": "electron-forge make --app-path ./electronApp"
+    "electronApp": "electron-forge start --app-path ./electronApp",    
   },
   "author": {
     "name": "Michell Cronberg",
