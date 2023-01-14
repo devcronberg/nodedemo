@@ -24,5 +24,4 @@ npm run jqueryApp
 npm run vueAppSimple
 npm run vueApp
 npn run electronApp
-npn run electronAppMake
 ```
