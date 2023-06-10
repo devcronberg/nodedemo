@@ -25,9 +25,9 @@ const createWindow = () => {
       label: "Menu",
       submenu: [
         {
-          label: "Michells blog",
+          label: "Github",
           click() {
-            shell.openExternal("https://blog.cronberg.dk");
+            shell.openExternal("https://www.github.com");
           },
         },
         {
